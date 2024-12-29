@@ -1,35 +1,64 @@
 @import "../../../color-variables.scss";
 
-.main-section{
+.main-section {
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: "Roboto", sans-serif;
 
-    
-    span{  
+
+    span {
         font-size: 18px;
         font-weight: 700;
         color: $secundary-text;
     }
-    h1{
-        font-size: 72px;
+
+    h1 {
+        font-size: 60px;
         font-weight: 900;
         color: $primery-text;
     }
 }
+
 .benefit-section {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
+
+
+    .benefit-data {
+        padding-top: 10px;
+        border-bottom: 10px solid $secundary-color;
+        padding-bottom: 30px;
+
+        h2 {
+            font-size: 60px;
+            font-weight: 600;
+            font-family: "Roboto", sans-serif;
+            color: $primery-text;
+        }
+    }
+
+
+    p {
+        font-size: 40px;
+        font-style: italic;
+        font-weight: 300;
+
+        b {
+            background: linear-gradient($primery-color, $light-primery-color);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
 }
 
-@media(min-width: 1080px){
-    .main-section{
+@media(min-width: 1080px) {
+    .main-section {
         flex-direction: row;
     }
+
     .benefit-section {
 
         display: flex;

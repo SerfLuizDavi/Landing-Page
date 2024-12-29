@@ -1,26 +1,38 @@
-*{
-    margin: 0;
-    padding: 0;
-}
+@import "../../../color-variables.scss";
 
 .main-section{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
     font-family: "Roboto", sans-serif;
+
+    
     span{  
-        font-size: 20px;
+        font-size: 18px;
         font-weight: 700;
+        color: $secundary-text;
     }
     h1{
         font-size: 72px;
         font-weight: 900;
+        color: $primery-text;
     }
+}
+.benefit-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
 }
 
 @media(min-width: 1080px){
     .main-section{
+        flex-direction: row;
+    }
+    .benefit-section {
+
+        display: flex;
         flex-direction: row;
     }
 }
